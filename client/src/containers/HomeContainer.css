@@ -1,0 +1,33 @@
+.home-container {
+    display : flex ;
+    flex-direction: column;  
+    height: 100%;
+}
+
+.home-container div {
+    padding : 10px ;
+    border : 1px #ccc solid ;
+}
+
+.navigation-bar {
+    padding : 0px !important;
+    display: flex ;
+    flex-direction: column;
+    flex: 1;
+}
+
+.stock-table {
+    flex: 8 ;
+    background-color: #0a2640 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer {
+    flex: 0.5 ;
+}
+
+.title {
+    text-align: center;
+}

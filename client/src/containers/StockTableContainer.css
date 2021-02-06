@@ -1,0 +1,43 @@
+
+.container-table {
+    border-collapse: collapse;
+    border-radius: 5px 5px 5px 5px ;
+    overflow: hidden ;
+    font-size: 0.9em;
+}
+
+.container-table thead tr {
+    background-color : #8095ff ;
+    color: white ;
+    text-align: left;
+}
+
+.container-table thead tr th {
+    padding: 12px 15px;
+}
+
+.container-table tbody {
+    border-left: 2px solid #8095ff;
+    border-right: 2px solid  #8095ff;
+}
+
+.container-table tbody tr {
+    color: black ;
+    background-color: white; 
+}
+
+.container-table td {
+    padding: 12px 15px;
+}
+
+.container-table tbody tr {
+    border-bottom: 1px solid gray;
+}
+
+.container-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.container-table tbody tr:last-of-type {
+    border-bottom:2px solid #8095ff;
+}
