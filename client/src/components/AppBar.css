@@ -1,0 +1,23 @@
+.app-bar {
+    display: flex;
+    flex-direction: row;
+    margin : 0;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.3) ;
+    padding: 0px 15px 0px 15px;
+    flex: 1.1;
+    align-items: center;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    padding:12px ;
+    justify-content: flex-start;
+}
+
+.account-icons{
+    padding:12px;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
