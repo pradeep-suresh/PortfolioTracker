@@ -11,18 +11,15 @@ api = Api(app)
 app_settings = os.getenv('APP_SETTINGS')
 app.config.from_object(app_settings)
 
-class Ping(Resource):
-    def get(self):
-        return {
-            'status' : 'success',
-            'message': 'pong!'
-        }
+from src.api.ping import ping_blueprint
+app.register_blueprint(ping_blueprint)
 
-class Time(Resource):
-    def get(self):
-        client = Client()
-        return jsonify(client.generate_cb_access_timestamp())
+from src.api.time import time_blueprint
+app.register_blueprint(time_blueprint)
 
+from src.api.accounts import accounts_blueprint
+app.register_blueprint(accounts_blueprint)
 
-api.add_resource(Ping, '/ping')
-api.add_resource(Time, '/time')
+from src.api.user import user_blueprint
+app.register_blueprint(user_blueprint)
+
